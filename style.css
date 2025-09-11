@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pdf-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pdf-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+.pdf-list li span {
+  font-weight: 500;
+}
+
+.pdf-list li a {
+  text-decoration: none;
+  color: white;
+  background: #2563eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.pdf-list li a:hover {
+  background: #1e40af;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  height: 85%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content iframe {
+  flex: 1;
+  border: none;
+}
+
+.modal-content button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 0 0 0 8px;
+  align-self: flex-end;
+  transition: background 0.2s;
+}
+
+.modal-content button:hover {
+  background: darkred;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pdf-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pdf-list li a {
+    margin-top: 8px;
+  }
+}

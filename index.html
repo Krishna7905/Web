@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF Library</h1>
+
+    <ul class="pdf-list" id="pdfList">
+      <li>
+        <span> C# - C# Practical Work 1</span>
+        <a href="pdfs/C%23%20Practical%20Work%201.pdf" class="viewBtn">View</a>
+      </li>
+      <li>
+        <span> C# - Console Application in C#</span>
+        <a href="pdfs/Console%20Application%20in%20C%23.pdf" class="viewBtn">View</a>
+      </li>
+      <li>
+        <span> C# - Practical File Part 3</span>
+        <a href="pdfs/Practical%20File%20Part%203.pdf" class="viewBtn">View</a>
+      </li>
+      <li>
+        <span> Python - Unit 2 Module & Packages</span>
+        <a href="pdfs/Unit2_Modules_package.pdf" class="viewBtn">View</a>
+      </li>
+      <li>
+        <span> Python - File</span>
+        <a href="pdfs/DataScienceFile124.pdf" class="viewBtn">View</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- PDF Modal Viewer -->
+  <div id="pdfViewer" class="modal">
+    <div class="modal-content">
+      <button id="closeBtn">✖ Close</button>
+      <iframe id="viewerFrame" src=""></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
