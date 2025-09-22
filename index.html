@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PDF Library</title>
+  <title> PDF Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>📄 PDF Library</h1>
+    <h1> PDF Library</h1>
+    <p class="subtitle">Browse, search, and view your PDFs in style.</p>
 
+    <!-- PDF List -->
     <ul class="pdf-list" id="pdfList">
       <li>
-        <span> C# - C# Practical Work 1</span>
+        <span> C# - Practical Work 1</span>
         <a href="pdfs/C%23%20Practical%20Work%201.pdf" class="viewBtn">View</a>
       </li>
       <li>
@@ -31,13 +33,24 @@
         <span> Python - File</span>
         <a href="pdfs/DataScienceFile124.pdf" class="viewBtn">View</a>
       </li>
+      <li>
+        <span> Python - Unit 4</span>
+        <a href="pdfs/Unit_4.pdf" class="viewBtn">View</a>
+      </li>
+      <li>
+        <span> Python - Queries</span>
+        <a href="pdfs/pythonfile.pdf" class="viewBtn">View</a>
+      </li>
     </ul>
   </div>
 
   <!-- PDF Modal Viewer -->
   <div id="pdfViewer" class="modal">
     <div class="modal-content">
-      <button id="closeBtn">✖ Close</button>
+      <div class="modal-header">
+        <button id="closeBtn">✖</button>
+        <button id="downloadBtn">⬇ Download</button>
+      </div>
       <iframe id="viewerFrame" src=""></iframe>
     </div>
   </div>
